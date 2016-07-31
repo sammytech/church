@@ -1,0 +1,17 @@
+<div class="fluid-container animated live-radio" [class.slideInUp]="appState.state.visible" [class.slideOutDown]="!appState.state.visible">
+    <div class="col-lg-5 full-height wrap">
+        <span class="helper"></span>
+        <img class="live-image inline" src="assets/icon/ms-icon-310x310.png"/>
+        <span class="title">
+            ENOCH'S PROPHECY CONCERNING THE SECOND COMING OF CHRIST
+        </span>
+    </div>
+    <div class="col-lg-2 full-height control">
+         <span class="helper"></span>
+        <span><i class="fa fa-play-circle "></i></span>
+    </div>
+    <div class="col-lg-5 full-height live-right">
+         <span class="helper"></span>
+        <span (click) = "hideLive()"><i class="fa fa-times"></i></span>
+    </div>
+</div>

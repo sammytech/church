@@ -1,0 +1,114 @@
+html, body{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    background-color: #333;
+    color: #fff;
+}
+/*
+span.active {
+  background-color: gray;
+}*/
+
+.navbar.transparent.navbar-default{
+   background: rgba(0,0,0,0.0);
+   border: 0;
+}
+.navbar-right{
+    margin-right: 30px;
+}
+
+.navbar-fixed-top.activateBg{
+    background: #222;
+    border-bottom-width: 1px;
+    transition: border-bottom-width 0.5s ease;
+    transition: background 0.5s ease;
+    
+}
+
+.navbar-fixed-top.deactivateBg{
+    background: rgba(34,34,34, 0.4);
+    border-bottom-width: 0px;
+    transition: border-bottom-width 0.5s ease;
+    transition: background 0.5s ease;
+    
+}
+
+footer{
+    position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+footer.main{
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    background-color: darkslategray;
+}
+
+footer.main .footer-wrapper{
+    text-align: center;
+    align-self: center;
+    
+}
+
+
+
+.online {
+  animation: blinker 1.5s cubic-bezier(.5, 0, 1, 1) infinite alternate; 
+  color: green; 
+  font-size: 10px;
+}
+
+@keyframes blinker {  
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@media (min-width: 979px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+    display: block;
+  }
+}
+
+.listen{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: transparent;
+    margin-left: 20px;
+}
+
+/*Multiple pages*/
+.page-header{
+    display: flex;
+    justify-content: center;
+    height: 450px;
+    margin:0;
+}
+.page-header h1{
+    align-self: center;
+    font-size: 5em;
+    font-weight: bold;
+}
+#page-header {
+  animation-duration: 2s;
+}
+
+.social{
+    font-size: 3em;
+}
+
+.social a{
+    color: inherit;
+}
+
+live{
+    position:fixed;
+   left:0px;
+   bottom:0px;
+   width: 100%;
+   z-index: 999;
+}

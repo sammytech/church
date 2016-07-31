@@ -1,0 +1,48 @@
+/*styles for home content only*/
+#carousel-current-event, .carousel-inner>.item{
+    height: 650px;
+    width: 100%;
+}
+
+.carousel-inner>.item>img{
+    height: 100%;  
+    width: 100%;
+    margin: auto; 
+    -webkit-filter:brightness(50%);
+    -moz-filter:brightness(50%);
+    filter: url(#brightness); /* required for FF */
+    filter:brightness(50%);
+}
+
+.welcome{
+    text-align: center;
+    border-bottom: solid 2px #333;
+    padding: 30px 0px;
+    background: #302013;
+}
+.welcome h1{
+    font-weight: bold;
+}
+.welcome p{
+    font-style: italic;
+    font-size: 20px;
+}
+.message-wrapper{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #fdf5ef;
+    color: #333;
+}
+.message-wrapper h2{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+
+}
+
+.hiddens{
+     opacity:0;
+}
+.visibles{
+     opacity:1;
+}

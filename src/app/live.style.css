@@ -1,0 +1,68 @@
+.live-radio{
+    height: 60px;
+    background: #333;
+    border-top: 1px solid black;
+    color: white;
+    /*visibility: hidden;*/
+}
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+.inline{
+    display: inline-block;
+    vertical-align: middle
+}
+
+.live-image{
+    height: 50px;
+    width: 50px;
+    /*line-height: 60px;*/
+    vertical-align: middle;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+.control{
+    font-size: 3em;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.live-visible{
+    visibility: visible;
+}
+
+.wrap{
+    white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+.title{
+    margin-left: 10px;
+    display: inline;
+    line-height: 50px;
+    height: 50px;
+    /*width: 100%;*/
+    
+}
+
+.full-height{
+    height: 100%;
+}
+
+.live-right{
+    text-align: right;
+    font-size: 2em;
+    padding-right: 50px;
+    /*float: right*/
+}
+
+i{
+    cursor: pointer;
+}

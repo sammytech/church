@@ -1,0 +1,75 @@
+<nav class="navbar navbar-default navbar-fixed-top deactivateBg">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../">Holiness Christian Radio</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li [routerLinkActive]="['active']"><a [routerLink]=" ['./home']" >HOME</a></li>
+                <li [routerLinkActive]="['active']" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SERMONS </a>
+                    <ul class="dropdown-menu dropdown-menu-left">
+                        <li><a [routerLink]=" ['./sermons/reading']">Bible Reading</a></li>
+                        <li><a [routerLink]=" ['./sermons/outline']">Bible Study Outline</a></li>
+                        <li><a [routerLink]=" ['./sermons']">Podcast</a></li>
+                        <!-- <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li> -->
+                    </ul>
+                </li>
+                <li [routerLinkActive]="['active']" class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">RESOURCES </a>
+                    <ul class="dropdown-menu dropdown-menu-left">
+                        <li><a href="#">Q & A</a></li>
+                        <li><a href="#">Books</a></li>
+                        <!-- <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li> -->
+                    </ul>
+                </li>
+                <li [routerLinkActive]="['active']"><a [routerLink]=" ['./mission']">MISSION</a></li>
+                <!--<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MISSION</span></a>
+                    <ul class="dropdown-menu dropdown-menu-left">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>-->
+                <li [routerLinkActive]="['active']"><a [routerLink]=" ['./events']">EVENTS</a></li>
+                <li [routerLinkActive]="['active']"><a [routerLink]=" ['./about']">ABOUT US</a></li>
+                <li [routerLinkActive]="['active']"><a [routerLink]=" ['./contact']">CONTACT US</a></li>
+                <button (click) = "showLive()" type="button" class="btn btn-default navbar-btn listen"><i class="fa fa-circle online"></i>&nbsp;&nbsp;&nbsp;LIVE</button>
+
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
+
+<main>
+    <router-outlet></router-outlet>
+</main>
+<live [visible] = "live"></live>
+ <footer class="col-lg-12 main">
+    <div class="footer-wrapper">
+        <div class="phone">+888 888 8888</div>
+        <div class="address"></div>
+        <div class="times"></div>
+        <div class="social"> 
+           <a href="https://facebook.com"> <i class="fa fa-facebook-square"></i></a>
+           <a href="https://twitter.com"> <i class="fa fa-twitter-square"></i></a>
+           <a href="https://instagram.com"> <i class="fa fa-instagram"></i> </a>
+        </div>
+        <div class="copyright">Copyright &copy; 2016 Holiness Christian Radio</div>
+    </div>
+ </footer>
